@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "notranslate",
+  "version": "1.0.0",
+  "description": "Prevents the translation of code fragments with Google Translate",
+  "homepage_url": "https://github.com/espagueti/notranslate",
+  "author": "Jorge Tapia Cortese",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "run_at": "document_end",
+      "js": ["notranslate.js"]
+    }
+  ]
+}
