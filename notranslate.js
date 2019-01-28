@@ -1,6 +1,5 @@
-const tags = document.querySelectorAll('pre,.highlight,.prettyprint')
-
 const observer = new MutationObserver(() => {
+  const tags = document.querySelectorAll('pre,.highlight,.prettyprint')
   for (const tag of tags) {
     tag.classList.add('notranslate')
   }
